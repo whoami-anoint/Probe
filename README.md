@@ -21,7 +21,7 @@ The things you need before installing this tool.
 A step by step guide that will tell you how to get the development environment up and running.
 
 ```
-$ git clone the program: https://github.com/abhishekkafle-crypto/automation
+$ git clone https://github.com/abhishekkafle-crypto/automation
 $  cd automation
 $ ./automation.sh 
 ```
