@@ -27,7 +27,9 @@ git clone https://github.com/whoami-anoint/automation && cd automation
 ```
 chmod 777 automation.sh
 ```
-```./automation.sh ```
+```
+./automation.sh
+```
 
 ## Deployment
 
