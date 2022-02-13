@@ -22,10 +22,10 @@ The things you need before installing this tool.
 A step by step guide that will tell you how to get the development environment up and running.
 
 ```
- git clone https://github.com/whoami-anoint/automation
+git clone https://github.com/whoami-anoint/automation && cd automation
 ```
 ```
-  cd automation
+chmod 777 automation.sh
 ```
 ```
  ./automation.sh 
