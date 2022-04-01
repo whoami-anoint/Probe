@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+### Automation
+<br>
+Let's automated our target for recon.
 
-You can use the [editor on GitHub](https://github.com/whoami-anoint/automation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Getting Started
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Markdown
+### Prerequisites:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The things you need before installing this tool.
 
-```markdown
-Syntax highlighted code block
+* Subfinder
+* Amass
+* Httpx
+* Waybackurls
+* GF pattern
+* Dirsearch
 
-# Header 1
-## Header 2
-### Header 3
+### Point to be remember:
+```All tools should be preinstalled to use this automation tool. Place all tools in /usr/bin directory to get access easily.```
 
-- Bulleted
-- List
+### Installation:
 
-1. Numbered
-2. List
+A step by step guide that will tell you how to get the development environment up and running.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+git clone https://github.com/whoami-anoint/automation && cd automation
+```
+```
+chmod 777 automation.sh
+```
+```
+./automation.sh
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Usage:
+```
+./automation.sh 
+```
+Or 
+```
+bash automation.sh
+```
 
-### Jekyll Themes
+## Deployment:
+You can simple install this tool in your machine. But, I recommend to use VPS for smooth result in recon process.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/whoami-anoint/automation/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## Additional Documentation and Acknowledgments:
+I just create a bash program file with all existing tools. And I would like to thanks all those respective owner too.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```Happy Hacking!!❤️```
