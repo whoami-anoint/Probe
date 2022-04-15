@@ -26,7 +26,7 @@ cat waybackurls.txt | grep js | tee -a jsfiles.txt
 echo -n "Enter output file_name for dirsearch.py: "
 read output_file_link
 
-dalfox file $gfxss.txt
+dalfox file gfxss.txt
 
 python3 dirsearch.py -e php,htm,js,bak,zip,tgz,txt -u $target_link -t 20
 
