@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "You might be fan of Superman,Batman,Shaktiman,Spiderman or Iron Man but I'm fan of Pacman" | pv -qL 8
+figlet -c automation
+
 echo "Welcome to bug automation tool"
 
 echo -n "Enter  target site  link : "
@@ -25,7 +26,4 @@ cat waybackurls.txt | gf xss | tee -a gfxss.txt
 cat waybackurls.txt | gf sqli | tee -a gfsqli.txt
 cat waybackurls.txt | grep js | tee -a jsfiles.txt
 
-echo -n "Enter output file_name for dirsearch.py: "
-read output_file_link
-
-dalfox file gfxss.txt
+echo "You might be fan of Superman,Batman,Shaktiman,Spiderman,Iron Man but I'm fan of Pacman" | pv -qL 8
