@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "You might be fan ho Superman,Batman,Shaktiman,Spiderman,Iron Man but I'm fan of Pacman" | pv -qL 8
+echo "You might be fan of Superman,Batman,Shaktiman,Spiderman or Iron Man but I'm fan of Pacman" | pv -qL 8
 echo "Welcome to bug automation tool"
 
 echo -n "Enter  target site  link : "
