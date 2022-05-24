@@ -16,3 +16,4 @@ nmap
 sqlmap
 pv
 zenity
+figlet
