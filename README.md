@@ -25,12 +25,9 @@ A step by step guide that will tell you how to get the development environment u
 
 ```
 git clone https://github.com/whoami-anoint/automation && cd automation
-```
-```
 chmod 777 automation.sh
-```
-```
 ./automation.sh
+
 ```
 
 ## Usage:
