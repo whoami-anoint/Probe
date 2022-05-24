@@ -1,5 +1,7 @@
 #!/bin/bash
+echo "You might be fan ho Superman,Batman,Shaktiman,Spiderman,Iron Man but I'm fan of Pacman" | pv -qL 8
 echo "Welcome to bug automation tool"
+
 echo -n "Enter  target site  link : "
 read target_link
 echo -n "Enter output file_name for subfinder: "
@@ -27,8 +29,6 @@ echo -n "Enter output file_name for dirsearch.py: "
 read output_file_link
 
 dalfox file gfxss.txt
-
-python3 dirsearch.py -e php,htm,js,bak,zip,tgz,txt -u $target_link -t 20
 
 
 
