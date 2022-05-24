@@ -29,7 +29,3 @@ echo -n "Enter output file_name for dirsearch.py: "
 read output_file_link
 
 dalfox file gfxss.txt
-
-
-
-
