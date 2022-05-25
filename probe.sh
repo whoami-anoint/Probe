@@ -1,6 +1,6 @@
 #!/bin/bash
-figlet -c automation
-
+figlet -c Probe
+ 
 echo "Welcome to bug automation tool"
 
 echo -n "Enter  target site  link : "
