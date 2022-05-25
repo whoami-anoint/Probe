@@ -1,4 +1,4 @@
-### Automation
+### Probe
 <h1>Let's automated our target for recon. </h1>  
 
 Getting Started
