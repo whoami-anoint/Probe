@@ -26,7 +26,7 @@ A step by step guide that will tell you how to get the development environment u
 ```
 git clone https://github.com/whoami-anoint/Probe && cd Probe
 chmod 777 probe.sh
-./automation.sh
+./probe.sh
 
 ```
 
