@@ -18,7 +18,7 @@ else
     pkg_manager="apt-get install"
 fi
 pv -qL 70 .banner.txt
-echo -e "\n[*]Installing Prob....." | pv -qL 8
+echo -e "\n[*]Installing Probe....." | pv -qL 8
 $pkg_manager dirsearch 
 $pkg_manager nmap 
 $pkg_manager go 
