@@ -1,5 +1,5 @@
 #!/bin/bash
-figlet -c Probe
+pv -qL 70 .banner.txt
  
 echo "Welcome to bug automation tool"
 
