@@ -34,11 +34,6 @@ chmod 777 probe.sh
 ```
 ./probe.sh 
 ```
-Or 
-```
-bash probe.sh
-```
-
 ## Deployment:
 You can simple install this tool in your machine. But, I recommend to use VPS for smooth result in recon process.
 
