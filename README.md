@@ -21,7 +21,7 @@ chmod 777 probe.sh
 ```
 
 ## Usage:
-```
+```console
 ./probe.sh 
 ```
 ## Deployment:
