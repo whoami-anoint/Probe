@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 A step by step guide that will tell you how to get the development environment up and running.
 
-```
+```console
 git clone https://github.com/whoami-anoint/Probe && cd Probe
 chmod 777 probe.sh
 ./probe.sh
