@@ -1,5 +1,5 @@
 #!/bin/bash
-pv -qL 70 .banner.txt
+pv -qL 70 banner.txt
  
 echo "Welcome to bug automation tool"
 
