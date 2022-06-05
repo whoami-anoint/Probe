@@ -19,7 +19,8 @@ A step by step guide that will tell you how to get the development environment u
 
 ```console
 git clone https://github.com/whoami-anoint/Probe && cd Probe
-chmod 777 probe.sh
+chmod 777 install.sh probe.sh
+./install.sh
 ./probe.sh
 
 ```
@@ -33,8 +34,8 @@ You can simple install this tool in your machine. But, I recommend to use VPS fo
 
 
 ## Additional Documentation and Acknowledgments:
-I just create a bash program file with all existing tools. And I would like to thanks all those respective owner too.
-
+We are making <strong>Probe</strong> to reduce the <strong>Recon Problem</strong>
+<br>
 ```Happy Hacking!!❤️```
 
 <!DOCTYPE html>
