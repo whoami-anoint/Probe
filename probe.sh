@@ -1,5 +1,5 @@
 #!/bin/bash
-pv -qL 70 banner.txt
+pv -qL 70 .banner.txt
  
 echo "Welcome to bug automation tool"
 
@@ -25,5 +25,6 @@ nmap -iL finalsubdomain.txt -p --open -sV -oG nmap.txt
 cat waybackurls.txt | gf xss | tee -a gfxss.txt
 cat waybackurls.txt | gf sqli | tee -a gfsqli.txt
 cat waybackurls.txt | grep js | tee -a jsfiles.txt
+
 
 echo "You might be fan of Superman,Batman,Shaktiman,Spiderman,Iron Man but I'm fan of Pacman" | pv -qL 8
