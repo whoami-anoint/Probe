@@ -34,7 +34,7 @@ You can simple install this tool in your machine. But, I recommend to use VPS fo
 
 
 ## Additional Documentation and Acknowledgments:
-We are making <strong>Probe</strong> to reduce the <strong>Recon Problem</strong>
+<strong>Probe</strong> to reduce the <strong>Recon Prob.</strong>
 <br>
 ```Happy Hacking!!❤️```
 
