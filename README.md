@@ -1,7 +1,8 @@
 <h1>Probe</h1>
 <h2>Let's automated our target for recon. </h2>  
+ <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/Untitled%20design.gif" alt="Probe" width="800" height="500"> 
 
-Getting Started
+# Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
