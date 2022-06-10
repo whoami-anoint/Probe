@@ -1,17 +1,15 @@
 <h1>Probe</h1>
 <h2>Let's automated our target for recon. </h2>  
+<table>
+  <td>
+   <bold>We Hack For You.🥳<bold>
+    </table>
  <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/Untitled%20design.gif" alt="Probe" width="800" height="500"> 
 
 # Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-
-### Point to be remember:
-<table>
-  <td>
-    All tools should be preinstalled to use this automation tool. Place all tools in /usr/bin directory to get access easily.
-    </table>
 
 ### Installation:
 
@@ -34,7 +32,7 @@ You can simple install this tool in your machine. But, I recommend to use VPS fo
 
 
 ## Additional Documentation and Acknowledgments:
-We are making <strong>Probe</strong> to reduce the <strong>Recon Problem</strong>
+<strong>Probe</strong> to reduce the <strong>Recon Prob.</strong>
 <br>
 ```Happy Hacking!!❤️```
 
