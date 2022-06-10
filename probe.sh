@@ -35,32 +35,26 @@ echo "Provide Directory search output file name to store.... "
 echo -n "[*] Dirsearch : "
 read dir_file
 
-
+subdomain(){
+    subfinder -d  $target_link -t 200 -v -o $sub1.txt
+    amass enum -src -ip -brute -d $target_link -o $sub2.txt
+    sort $sub1.txt $sub2.txt | uniq -u > sub_uniq.txt
+    cat sub_uniq.txt |httpx -threads 200| tee -a subdomain.txt
+    cat subdomain.txt | waybackurls | tee -a waybackurls.txt
+    notify -bulk -data waybackurls.txt -id subdomain
+}
 
 
 if [[ $response == "Y" || $response == "y" || $response == "yes" || $response == "Yes" ]]
 then
     cd $pro_name
-    subfinder -d  $target_link -t 200 -v -o $sub1.txt
-    amass enum -src -ip -brute -d $target_link -o $sub2.txt
-    sort $sub1.txt $sub2.txt | uniq -u sub_uniq.txt
-    cat sub_uniq.txt |httpx -threads 200| tee -a subdomains.txt
-    cat subdomain.txt | waybackurls | tee -a waybackurls.txt
-    notify -data waybackurls.txt
+    subdomain
     
-
-    
-
 
 elif [[ $response == "N" || $response == "n" || $response == "no" || $response == "No"  ]]
 then
-    cd Scans
-    subfinder -d  $target_link -t 200 -v -o $sub1.txt
-    amass enum -src -ip -brute -d $target_link -o $output_file_amass.txt
-    sort $sub1.txt $sub2.txt | uniq -u > sub_uniq.txt
-    cat sub_uniq.txt |httpx -threads 200| tee -a subdomain.txt
-    cat subdomain.txt | waybackurls | tee -a waybackurls.txt
-    notify -data waybackurls.txt
+    cd Scan
+    subdomain
     
 
 else 
