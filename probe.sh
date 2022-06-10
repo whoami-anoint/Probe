@@ -11,7 +11,7 @@ then
     echo -n "Project name : "
     read pro_name
     echo "[*]Creating project $pro_name....." | pv -qL  25
-    mkdir $pro_name
+    mkdir Projects/$pro_name
 elif [[ $response == "N" || $response == "n" || $response == "no" || $response == "No"  ]]
 then
     echo "[*] Using Scan directory as project "
