@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Point to be remember:
 <table>
   <td>
-    All tools should be preinstalled to use this automation tool. Place all tools in /usr/bin directory to get access easily.
+   <bold> We Hack For You.🥳<bold>
     </table>
 
 ### Installation:
