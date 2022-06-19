@@ -22,6 +22,8 @@ chmod 777 install.sh probe.sh
 ./probe.sh
 
 ```
+     
+<img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/Probe.gif" alt="Probe Installation" width="800" height="500"> 
 
 ## Usage:
 ```console
