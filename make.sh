@@ -5,10 +5,10 @@ os_type=`uname -r`
 if [[ $os_type == *"arch1"* ]];
 then
     pkg_manager="yay -S ";
-    # go_lang = "go"
+    go_lang="go"
 else 
     pkg_manager="sudo apt-get install";
-    go_lang = "golang"
+    go_lang="golang"
 fi
 #Before running banner or other text pv is required
 
