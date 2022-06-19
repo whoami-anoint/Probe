@@ -4,7 +4,7 @@
   <td>
    <bold>We Hack For You.🥳<bold>
     </table>
- <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/Untitled%20design.gif" alt="Probe" width="800" height="500"> 
+ <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/art/Probe.gif" alt="Probe" width="600" height="500"> 
 
 # Getting Started
 
@@ -21,7 +21,7 @@ chmod 777 install.sh probe.sh
 ./install.sh
 ```
      
-<img src="https://github.com/whoami-anoint/Probe/blob/main/probe-installation.gif" alt="Probe Installation" width="800" height="500"> 
+<img src="https://github.com/whoami-anoint/Probe/blob/main/probe-installation.gif" alt="Probe Installation" width="700" height="500"> 
 
 ## Usage:
 ```console
