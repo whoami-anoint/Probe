@@ -19,8 +19,6 @@ A step by step guide that will tell you how to get the development environment u
 git clone https://github.com/whoami-anoint/Probe && cd Probe
 chmod 777 install.sh probe.sh
 ./install.sh
-./probe.sh
-
 ```
      
 <img src="https://github.com/whoami-anoint/Probe/blob/main/probe-installation.gif" alt="Probe Installation" width="800" height="500"> 
