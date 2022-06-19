@@ -4,7 +4,7 @@
   <td>
    <bold>We Hack For You.🥳<bold>
     </table>
- <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/art/Probe.gif" alt="Probe" width="600" height="500"> 
+ <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/art/Probe.gif" alt="Probe" width="600" height="600"> 
 
 # Getting Started
 
