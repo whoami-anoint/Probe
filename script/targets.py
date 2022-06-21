@@ -4,7 +4,7 @@ number = int(input("Enter number of Domains : "))
 target_list = []
 
 
-#For subfinder and amass
+#Domains saving part
 with open("/tmp/targets.txt", 'w') as target:
     for i in range(number):
         target_list.append(input('['+str(i+1)+'] Enter Target : ')+'\n')
