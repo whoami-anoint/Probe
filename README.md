@@ -2,7 +2,7 @@
 <h2>Let's automated our target for recon. </h2>  
 <table>
   <td>
-   <bold>We Hack For You.🥳<bold>
+   <strong>We Hack For You.🥳</strong>
     </table>
  <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/art/Probe.gif" alt="Probe" width="600" height="600"> 
 
