@@ -1,5 +1,4 @@
 # curl -s "http://web.archive.org/cdx/search/cdx?url=*.$name/*&output=text&fl=original&collapse=urlkey" | sed -e 's_https*://__' -e "s/\/.*//" | sort -u | tee WaybackSub.txt
-from opcode import opname
 import pycurl 
 from io import BytesIO
 from os import system as bash
