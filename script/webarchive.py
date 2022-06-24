@@ -36,4 +36,3 @@ domains.close
 cmd = 'cat /tmp/webarchive.txt | sed -e \'s_https*://__\' -e \"s/\/.*//\" | sort -u | tee -a /tmp/sub4.txt '
 cmd_sub = 'cat /tmp/sub4.txt'
 bash(cmd)
-print('I ran those cmd')
