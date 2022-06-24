@@ -1,10 +1,11 @@
 #!/bin/bash
 clear
-# bash script/art.sh
+bash script/art.sh
+
 function error(){
     echo "*********************************************"
     echo "* * * You fool! Its like GIGO ;)  * * * * * *"
-    echo "* * * * * * Invalid Input * * * * * * * * * *"
+    echo "* * * * * * Invaild Input * * * * * * * * * *"
     echo "*********************************************"
 }
 
@@ -22,25 +23,28 @@ then
     echo "[*] Using Scan directory as project "
     mkdir Scan
 else 
-    error
-    exit
+    echo -n "Project name : "
+    read pro_name
+    echo "[*]Creating project $pro_name....." | pv -qL  25
+    mkdir Projects/$pro_name 2>/dev/null
 fi
 
 #Target 
 python3 script/targets.py
 
 #Probing
-#assestfinder
+
 
 function subdomain(){
-    #subfinder -dL  /tmp/targets.txt -t 200 -v -o /tmp/sub1.txt
-    #amass enum -src -ip -brute -df /tmp/targets.txt -o /tmp/sub2.txt
-    #bash script/assestFinder.sh #It will create a file /tmp/sub3.txt
+    subfinder -dL  /tmp/targets.txt -t 200 -v -o /tmp/sub1.txt
+    amass enum -src -df /tmp/targets.txt -o /tmp/sub2.txt
+    bash script/assestFinder.sh #It will create a file /tmp/sub3.txt
+    anubis -f /tmp/targets.txt -o /tmp/sub3.txt
     python3 script/webarchive.py #It will create a file /tmp/sub4.txt
-    # sort sub1.txt sub2.txt | uniq -u > sub_uniq.txt
-    # cat sub_uniq.txt |httpx -threads 200| tee -a subdomains.txt
-    # cat subdomains.txt | waybackurls | tee -a waybackurls.txt
-    # cat waybackurls.txt |gf xss| tee -a gfxss.txt
+    sort sub1.txt sub2.txt sub3.txt sub4.txt | uniq -u > sub_uniq.txt
+    cat sub_uniq.txt |httpx -threads 200| tee -a subdomains.txt
+    cat subdomains.txt | waybackurls | tee -a waybackurls.txt
+    cat waybackurls.txt |gf xss| tee -a gfxss.txt
 }
 
 if [[ $response == "Y" || $response == "y" || $response == "yes" || $response == "Yes" ]]
@@ -56,6 +60,7 @@ then
     subdomain
 
 else 
-    error
-    exit
+    cd Projects/$pro_name
+    cd ../..
+    subdomain
 fi
