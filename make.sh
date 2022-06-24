@@ -32,6 +32,7 @@ $pkg_manager python3-pip  libssl-dev libffi-dev
 $pkg_manager jq
 pip3 install anubis-netsec
 pip3 install pycurl
+pip install pycurl
 #Go install
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install -v github.com/OWASP/Amass/v3/...@master
