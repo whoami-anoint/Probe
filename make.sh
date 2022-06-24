@@ -67,15 +67,16 @@ sudo cp ~/.local/bin/* /bin
 #Fun Part
 if [[ ! -f "/bin/gf" ]]
 then
-    echo -e "[*]GF with good nature make life easy..." | pv -qL 8
+    
     echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
-    echo -e "[*]Proposing gf...."|pv -qL 8
     echo 'source /root/go/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
-    echo -e "[*]Building Relation......"|pv -qL 8
+    
 fi
 
 # Copying part of go
 sudo mv ~/go/bin/* /bin/ 2>/dev/null
-
+echo -e "[*]GF with good nature make life easy..." | pv -qL 8
+echo -e "[*]Proposing gf...."|pv -qL 8
+echo -e "[*]Building Relation......"|pv -qL 8
 echo -e "\n[*]Probe is ready to use...."|pv -qL 8
 cat art/thanks.txt
