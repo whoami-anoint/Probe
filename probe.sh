@@ -35,7 +35,8 @@ python3 script/targets.py
 function subdomain(){
     #subfinder -dL  /tmp/targets.txt -t 200 -v -o /tmp/sub1.txt
     #amass enum -src -ip -brute -df /tmp/targets.txt -o /tmp/sub2.txt
-    bash script/assestFinder.sh
+    #bash script/assestFinder.sh #It will create a file /tmp/sub3.txt
+    python3 script/webarchive.py #It will create a file /tmp/sub4.txt
     # sort sub1.txt sub2.txt | uniq -u > sub_uniq.txt
     # cat sub_uniq.txt |httpx -threads 200| tee -a subdomains.txt
     # cat subdomains.txt | waybackurls | tee -a waybackurls.txt
