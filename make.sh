@@ -6,9 +6,12 @@ if [[ $os_type == *"arch1"* ]];
 then
     pkg_manager="yay -S ";
     go_lang="go"
+    $pkg_manager python-devtools
 else 
     pkg_manager="sudo apt-get install";
+
     go_lang="golang"
+    $pkg_manager python-dev-is-python3
 fi
 #Before running banner or other text pv is required
 
@@ -25,7 +28,10 @@ echo -e "\n\n[*]Installing Probe....." | pv -qL 8
 $pkg_manager dirsearch 
 $pkg_manager nmap
 $pkg_manager $go_lang
-
+$pkg_manager python3-pip  libssl-dev libffi-dev
+$pkg_manager jq
+pip3 install anubis-netsec
+pip3 install pycurl
 #Go install
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install -v github.com/OWASP/Amass/v3/...@master
@@ -54,9 +60,9 @@ clear
 mkdir ~/.gf 2>/dev/null
 cp gf/examples/* ~/.gf 2>/dev/null
 cp Gf-Patterns/* ~/.gf 2>/dev/null
-
 #Back to Home 
 cd ..
+sudo cp ~/.local/bin/* /bin
 
 #Fun Part
 if [[ ! -f "/bin/gf" ]]
