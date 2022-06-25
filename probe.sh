@@ -5,7 +5,7 @@ bash script/art.sh
 function error(){
     echo "*********************************************"
     echo "* * * You fool! Its like GIGO ;)  * * * * * *"
-    echo "* * * * * * Invaild Input * * * * * * * * * *"
+    echo "* * * * * * Invalid Input * * * * * * * * * *"
     echo "*********************************************"
 }
 
