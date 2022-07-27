@@ -2,9 +2,13 @@
 <h2>Let's automated our target for recon. </h2>  
 <table>
   <td>
-   <bold>We Hack For You.🥳<bold>
+   <strong>We Hack For You.🥳</strong>
     </table>
- <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/Untitled%20design.gif" alt="Probe" width="800" height="500"> 
+    <strong>"
+  Before: go corona go
+  <br>
+Now: go probe.go" </strong>
+ <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/art/Probe.gif" alt="Probe" width="600" height="600"> 
 
 # Getting Started
 
@@ -19,9 +23,9 @@ A step by step guide that will tell you how to get the development environment u
 git clone https://github.com/whoami-anoint/Probe && cd Probe
 chmod 777 install.sh probe.sh
 ./install.sh
-./probe.sh
-
 ```
+     
+<img src="https://github.com/whoami-anoint/Probe/blob/f174600f4c183bb89a016e4bca22ba257d2f741b/art/probe-installation.gif" alt="Probe Installation" width="700" height="500"> 
 
 ## Usage:
 ```console
