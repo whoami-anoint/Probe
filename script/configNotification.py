@@ -60,7 +60,7 @@ def notify_option():
   global data
   print(BANNER+banner+RESET,end="")
   print(INFO+text2art("Setup")+RESET)
-  print(BANNER+"["+"+"+BANNER+"] "+SUCCESS+"Tool created by selenophilem7 and whoami-anoint"+RESET,end="\n\n")
+  print(BANNER+"["+"+"+BANNER+"] "+SUCCESS+"Tool created by whoami-anoint and selenophilem7"+RESET,end="\n\n")
 
   # Options portion
   print(BANNER+".:.Options to create notification system.:."+RESET)
