@@ -94,23 +94,41 @@ else:
     os.system(PKG_MNGR +' '+GO)
     print(G+'Golang installation completed ....'+N)
 print('---------------------------------------------')
+
 #Nmap check
 
+print('['+Y+'+'+N+'] Initilized '+Y+'nmap'+N+' check up ...')
+time.sleep(.5)
 if os.path.exists('/bin/nmap'):
-    pass
+    print('['+G+'+'+N+'] Package already satisfied ...')
+    print(Y+'Skipping '+C+' nmap'+Y+' installation ....'+N)
+    time.sleep(.5)
 else:
+    print('['+Y+'!'+N+'] Package missing ...')
+    print(Y+'Started '+C+' Nmap'+Y+' installation ....')
     os.system(PKG_MNGR + ' nmap')
+    print(G+'Nmap installation completed ....'+N)
+print('---------------------------------------------')
 
 #Subfinder check
 
+print('['+Y+'+'+N+'] Initilized '+Y+'subfinder'+N+' check up ...')
+time.sleep(.5)
 BIN_CHECK =  os.path.exists('/bin/subfinder') #False means not found , True means found
 if not BIN_CHECK:
     GOBIN_CHECK = os.path.exists(HOME_DIR+'go/bin/subfinder') # False means not found , True means found
     if GOBIN_CHECK :
         os.system(f'sudo mv {HOME_DIR}go/bin/subfinder /bin') # {HOME_DIR}go/bin/subfinder -> ~/go/bin/subfinder
+        print('['+G+'+'+N+'] Package already satisfied ...')
+        print(Y+'Skipping '+C+' Golang'+Y+' installation ....'+N)
+        time.sleep(.5)
     else:
+        print('['+Y+'!'+N+'] Package missing ...')
+        print(Y+'Started '+C+' Subfinder'+Y+' installation ....')
         os.system('go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest')
         os.system(f'sudo mv {HOME_DIR}go/bin/subfinder /bin')
+        print(G+'subfinder installation completed ....'+N)
+print('---------------------------------------------')
 
 
 #Amasss check 
@@ -147,3 +165,4 @@ if not BIN_CHECK:
     else:
         os.system('go install github.com/tomnomnom/waybackurls@latest')
         os.system(f'sudo mv {HOME_DIR}go/bin/waybackurls /bin')
+print('Hold a second compiling the requirements of probe....')
