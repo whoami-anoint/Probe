@@ -3,15 +3,16 @@ import distro
 import os
 import time
 from random import choice
+
+
 try:
     from art import *
     from colorama import Fore, Style
 except:
-    os.system('python3 script/art.py')
     STYLE = '\033[33m[\033[31m!\033[33m]\033[00m'
     print(STYLE+'\033[31m error : python \033[33mmodules\033[31m missing '+STYLE)
     print(STYLE+'\033[31m run : \033[33mpip3 install -r requirements.txt\033[00m '+STYLE)
-    exit(2)
+    exit()
 
 
 #VARIABLES
@@ -35,7 +36,7 @@ PROBE_PATH = os.path.join(HOME_DIR, DIR) #creating a path to make a directory
 #File exists or not
 
 
-BIN_CHECK = False  #True means found in /bin and False means not found in /bin 
+BIN_CHECK = False  #True means found in /bin and False means not found in /bin
 GOBIN_CHECK = False #True means found in ~/go/bin and False means not found in ~/go/bin
 
 #Banner
@@ -48,17 +49,6 @@ print(C+'.:.Everything you need as a'+Y+' Bug'+C+' hunter.:.'+N)
 print('-------------------------------------------\n'*2)
 time.sleep(.5)
 
-#Creating a hidden directory to store files
-
-try :
-    os.mkdir(PROBE_PATH) # Created a hidden directory 
-except:
-    pass
-
-
-#Copying script file to its destination 
-os.system('cp -rf script ~/.probe')
-
 
 #Linux Distro check; [Arch, Debian etc....]
 
@@ -67,9 +57,12 @@ print('['+G+'+'+N+'] Distro '+Y+DISTRO+N+' detected...'+N)
 print('['+Y+'+'+N+'] Setting up '+Y+DISTRO+N+' package manager...')
 time.sleep(0.5)
 
-#
-os.system('chmod +x *.sh')
-os.system('pip3 install art')
+#Downloading required files
+os.system('wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/sript/download.sh')
+os.system('chmod +x download.sh')
+os.system('bash download.sh')
+os.system('rm download.sh')
+
 
 #Setting up package manager and GO package because installer is different
 
@@ -78,7 +71,7 @@ if 'arch' in DISTRO:
     GO = 'go'
 else :
     PKG_MNGR = 'sudo apt install '
-    G0 = 'golang'
+    GO = 'golang'
 print('['+G+'+'+N+'] Package manager '+G+'setup'+N+' completed...')
 time.sleep(.5)
 
@@ -141,7 +134,7 @@ else :
 print('---------------------------------------------')
 
 
-#Amasss check 
+#Amasss check
 print('['+Y+'+'+N+'] Initilized '+Y+'Amass'+N+' check up ...')
 time.sleep(.5)
 BIN_CHECK = os.path.exists('/bin/amass')
@@ -185,14 +178,14 @@ print('---------------------------------------------')
 
 
 
-#Waybackurls check 
+#Waybackurls check
 print('['+Y+'+'+N+'] Initilized '+Y+'waybackruls'+N+' check up ...')
 time.sleep(.5)
 BIN_CHECK = os.path.exists('/bin/waybackurls')
 if not BIN_CHECK:
     GOBIN_CHECK = os.path.exists(HOME_DIR+'go/bin/waybackurls') # False means not found , True means found
     if GOBIN_CHECK :
-        os.system(f'sudo mv {HOME_DIR}go/bin/waybackurls /bin') 
+        os.system(f'sudo mv {HOME_DIR}go/bin/waybackurls /bin')
     else:
         print('['+Y+'!'+N+'] Package missing ...')
         print(Y+'Started '+C+' Waybackurls'+Y+' installation ....')
@@ -207,11 +200,16 @@ print('---------------------------------------------')
 
 BIN_CHECK = os.path.exists('/bin/gf')
 if not BIN_CHECK:
-    os.system('script/gf.sh')
+    os.system('chmod +x script/gf.sh')
+    os.system('bash script/gf.sh')
 else:
     pass
 
-os.system('python3 script/configNotification.py')
+check = input('Enable notification [y/N]: ')
+if str(check) == 'y' or str(check) =='Y' or  str(check) == 'yes':
+    os.system('python3 script/configNotification.py')
+else:
+    pass
 
 print('Hold on a second compiling the requirements of probe....')
 time.sleep(1)
