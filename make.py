@@ -58,7 +58,7 @@ print('['+Y+'+'+N+'] Setting up '+Y+DISTRO+N+' package manager...')
 time.sleep(0.5)
 
 #Downloading required files
-os.system('wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/sript/download.sh')
+os.system('wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/script/download.sh')
 os.system('chmod +x download.sh')
 os.system('bash download.sh')
 os.system('rm download.sh')
