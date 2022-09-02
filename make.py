@@ -27,6 +27,14 @@ Y = Fore.YELLOW
 B = Fore.BLUE
 
 
+
+#Downloading required files
+os.system('wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/script/download.sh')
+os.system('chmod +x download.sh')
+os.system('bash download.sh')
+os.system('rm download.sh')
+os.system('clear')
+
 #Directory variables
 HOME_DIR = '/home'+'/'+os.listdir('/home')[0]+'/' #Go to home
 
@@ -56,13 +64,6 @@ DISTRO = distro.id()
 print('['+G+'+'+N+'] Distro '+Y+DISTRO+N+' detected...'+N)
 print('['+Y+'+'+N+'] Setting up '+Y+DISTRO+N+' package manager...')
 time.sleep(0.5)
-
-#Downloading required files
-os.system('wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/script/download.sh')
-os.system('chmod +x download.sh')
-os.system('bash download.sh')
-os.system('rm download.sh')
-
 
 #Setting up package manager and GO package because installer is different
 
