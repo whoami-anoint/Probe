@@ -200,14 +200,14 @@ print('---------------------------------------------')
 
 BIN_CHECK = os.path.exists('/bin/gf')
 if not BIN_CHECK:
-    os.system('chmod +x script/gf.sh')
-    os.system('bash script/gf.sh')
+    os.system('chmod +x ~/.probe/script/gf.sh')
+    os.system('bash ~/.probe/script/gf.sh')
 else:
     pass
 
 check = input('Enable notification [y/N]: ')
 if str(check) == 'y' or str(check) =='Y' or  str(check) == 'yes':
-    os.system('python3 script/configNotification.py')
+    os.system('python3 ~/.probe/script/configNotification.py')
 else:
     pass
 
