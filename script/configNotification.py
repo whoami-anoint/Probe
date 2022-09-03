@@ -56,7 +56,7 @@ def logic(option):
     notify_option()
 
 def notify_option():
-  # Bnner portion
+  # Banner portion
   global data
   print(BANNER+banner+RESET,end="")
   print(INFO+text2art("Setup")+RESET)
