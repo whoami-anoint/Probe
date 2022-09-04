@@ -50,7 +50,7 @@ def logic(option):
     api_key = input()
     print(ERROR+"["+BANNER+"~"+ERROR+"] "+BANNER+"Chat id : "+RESET,end="")
     chat_id = input()
-  elif option == '3' or option == '03':
+  elif option == '0' or option == '00':
     print(ERROR+"["+BANNER+"-"+ERROR+"] "+SUCCESS+"Notification installer skipped"+RESET,end="\n")
     pass
   else :
@@ -68,7 +68,7 @@ def notify_option():
   print(BANNER+".:.Options to create notification system.:."+RESET)
   print(ERROR+"["+BANNER+"01"+ERROR+"] "+INFO+"Discord"+RESET)
   print(ERROR+"["+BANNER+"02"+ERROR+"] "+INFO+"Telegram"+RESET)
-  print(ERROR+"["+BANNER+"03"+ERROR+"] "+INFO+"ALL"+RESET,end="\n\n")
+  print(ERROR+"["+BANNER+"03"+ERROR+"] "+INFO+"ALL"+RESET)
   print(ERROR+"["+BANNER+"00"+ERROR+"] "+INFO+"Skip notification"+RESET,end="\n\n")
   print(ERROR+"["+BANNER+"~"+ERROR+"] "+BANNER+"Select and option: "+RESET,end="")
   data = input()
