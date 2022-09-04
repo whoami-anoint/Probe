@@ -216,3 +216,5 @@ else:
 print('Hold on a second compiling the requirements of probe....')
 time.sleep(1)
 os.system('echo "Installation completed...." | pv -qL 20')
+time.sleep(.5)
+print(C+'>.<    .:.Welcome to Probe.:.    >.<')
