@@ -1,3 +1,4 @@
+rm ~/.probe -rf 2>/dev/null
 mkdir ~/.probe 2>/dev/null
 mkdir ~/.probe/script 2>/dev/null
 wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/script/gf.sh -O ~/.probe/script/gf.sh
