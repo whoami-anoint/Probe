@@ -207,8 +207,8 @@ if not BIN_CHECK:
 else:
     pass
 
-check = input('Enable notification [y/N]: ')
-if str(check) == 'y' or str(check) =='Y' or  str(check) == 'yes':
+check = input('Enable notification [y/n]: ')
+if str(check) == 'y' or str(check) =='Y' or  str(check) == 'yes' or str(check) == 'Yes':
     os.system('python3 ~/.probe/script/configNotification.py')
 else:
     pass
