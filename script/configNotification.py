@@ -11,7 +11,7 @@ BANNER = Fore.CYAN
 RESET = Style.RESET_ALL
 
 # variables 
-banner = text2art("Notification", "random")
+banner = text2art("Notification", "chunky")
 option = ''
 webHook_url = ''
 api_key = ''
