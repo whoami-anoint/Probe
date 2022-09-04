@@ -19,19 +19,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 A step by step guide that will tell you how to get the development environment up and running.
 
-Clone our repository
+Download probe installer make.py
 ```console
-git clone https://github.com/whoami-anoint/Probe && cd Probe
+wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/make.py
 ```
-Install python requirement
-```console
-pip3 install art
-```
-Running the installer
+Run the installer
 ```console
 python3 make.py
 ```
-     
+Report us back if you face any problem; we are happy to hear from awesome hacker like you...
+
 <img src="https://github.com/whoami-anoint/Probe/blob/f174600f4c183bb89a016e4bca22ba257d2f741b/art/probe-installation.gif" alt="Probe Installation" width="700" height="500"> 
 
 ## Usage:
