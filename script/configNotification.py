@@ -52,7 +52,7 @@ def logic(option):
     chat_id = input()
   elif option == '0' or option == '00':
     print(ERROR+"["+BANNER+"-"+ERROR+"] "+SUCCESS+"Notification installer skipped"+RESET,end="\n")
-    pass
+    exit()
   else :
     print(INFO+"["+"*"+INFO+"]"+BANNER+"Error incorrect input"+RESET)
     notify_option()
