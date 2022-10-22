@@ -8,7 +8,7 @@ bash script/art.sh
 
 #Creating Project
 
-echo -n "Create project [y/N]"
+echo -n "Create project [Y/n]: "
 read response
 if [[ $response == "Y" || $response == "y" || $response == "yes" || $response == "Yes" ]]
 then
