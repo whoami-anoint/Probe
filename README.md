@@ -4,10 +4,10 @@
   <td>
    <strong>We Hack For You.🥳</strong>
     </table>
-    <strong>"
-  Before: go corona go
+    <b>
+Before: "go corona go"
   <br>
-Now: go probe.go" </strong>
+Now: "go probe.go" </b>
  <img src="https://raw.githubusercontent.com/whoami-anoint/Probe/main/art/Probe.gif" alt="Probe" width="600" height="600"> 
 
 # Getting Started
