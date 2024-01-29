@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Probe
 
 # Controls when the workflow will run
 on:
@@ -19,18 +17,22 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: 
-    -  self-hosted
+      self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      # Install Probe dependencies
+      - name: Install Probe dependencies
+        run: |
+          # Download probe installer make.py
+          wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/make.py
+          # Run the installer
+          python3 make.py
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      # Finally, run probe.sh
+      - name: Run Probe
+        run: ./probe.sh
