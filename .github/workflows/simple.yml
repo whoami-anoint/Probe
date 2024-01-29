@@ -25,14 +25,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Install Probe dependencies
-      - name: Install Probe dependencies
+      # Install dependencies
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install additional dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-liberation
+          sudo pip install art
+
+      # Finally, run probe.sh
+      - name: Run Probe
         run: |
           # Download probe installer make.py
           wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/make.py
           # Run the installer
           python3 make.py
-
-      # Finally, run probe.sh
-      - name: Run Probe
-        run: ./probe.sh
