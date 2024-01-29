@@ -20,12 +20,9 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install additional dependencies
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y fonts-liberation
-          sudo apt-get install -y python3-pip
-          sudo pip3 install art
 
       - name: Run Probe
         run: |
