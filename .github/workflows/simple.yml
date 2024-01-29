@@ -1,31 +1,20 @@
 name: Probe
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [main]
   pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
-    runs-on: 
-      self-hosted
+    runs-on: self-hosted
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Install dependencies
       - name: Install Python
         uses: actions/setup-python@v2
         with:
@@ -35,12 +24,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y fonts-liberation
-          sudo pip install art
+          sudo apt-get install -y python3-pip
+          sudo pip3 install art
 
-      # Finally, run probe.sh
       - name: Run Probe
         run: |
-          # Download probe installer make.py
           wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/make.py
-          # Run the installer
           python3 make.py
