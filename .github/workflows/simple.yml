@@ -25,10 +25,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y fonts-liberation
           sudo apt-get install -y python3-pip
-          sudo pip3 install --upgrade pip
           sudo pip3 install art
 
       - name: Run Probe
         run: |
-          wget https://raw.githubusercontent.com/whoami-anoint/Probe/main/make.py
-          python3 make.py || echo "Error: Unable to run make.py script."
+          bash probe.sh
